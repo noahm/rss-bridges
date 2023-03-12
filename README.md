@@ -1,6 +1,8 @@
 # rss-bridges
 
-RSS is still cool, but some websites out there don't seem to think so. That's fine, because [rss-bridge]() fixes that. These are some custom bridges I've made that do handy things for me.
+RSS is still cool, but some websites out there don't seem to think so. That's fine, because [rss-bridge](https://github.com/RSS-Bridge/rss-bridge) fixes that. These are some custom bridges I've made that do handy things for me.
+
+This is the successor to my other RSS pet project, [rss-proxy](https://github.com/noahm/rss-proxy).
 
 ## How to use
 
@@ -9,7 +11,3 @@ Setup a running copy of `rss-bridge` for yourself. I used [YunoHost](https://yun
 ## Bridges
 
 - LeaguePatchNotes - Just a simple RSS feed conversion of (League's official patch notes)[https://www.leagueoflegends.com/en-us/news/tags/patch-notes/]
-
-### TODO
-
-- [ ] Split out Dollop podcast so regular episodes and Past Times come in separate feeds

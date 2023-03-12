@@ -5,7 +5,7 @@ declare(strict_types=1);
 class LeaguePatchNotesBridge extends BridgeAbstract {
         const MAINTAINER = 'noahm';
         const NAME = 'League Patch Notes';
-        const URI = 'https://www.leagueoflegends.com/en-us/news/tags/patch-notes/';
+        const URI = 'https://github.com/noahm/rss-bridges';
         const DESCRIPTION = 'RSS feed for Patch Notes posts for League of Legends';
 
         public function getIcon() {
@@ -13,7 +13,7 @@ class LeaguePatchNotesBridge extends BridgeAbstract {
         }
 
         public function collectData() {
-                $html = getSimpleHTMLDOM(self::URI);
+                $html = getSimpleHTMLDOM('https://www.leagueoflegends.com/en-us/news/tags/patch-notes/');
                 $articles = $html->find('article');
                 foreach ($articles as $article) {
                         $item = array();
